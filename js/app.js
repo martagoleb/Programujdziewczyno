@@ -1,14 +1,24 @@
-console.log("działa!");
-var myName = 'Marta';
-var names = ['Agata', 'Marta', 'Basia', 'Asia'];
-console.log(myName);
+'use strict';
+document.addEventListener('DOMContentLoaded', function()
+                          
+{console.log('działa')
+      
+var elementWithDropdown = document.querySelector('.for-dropdown');
+ 
+ console.log(elementWithDropdown);
+ 
+ var dropdown = document.querySelector('.dropdown');
+ 
+console.log(dropdown);
+ 
+ elementWithDropdown.addEventListener('mouseover', function() {
 
-var a = 150;
-var b = 3;
+console.log('myszka jest tu');
+     
+     dropdown.style.display = "block";
+ });
+     elementWithDropdown.addEventListener('mouseout', function() {
 
-if (a > b) {console.log('hurra!')
-} else {console.log('ojej')
-}
-
-for (var i = 0; i <= names.length-1; i++) {
-console.log(names[i]);}
+     dropdown.style.display = "none";
+ });
+ });
